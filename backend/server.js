@@ -21,7 +21,7 @@ app.use('/',redirectRoutes);
 
 mongoose.connect(MONGO_URI).then(() =>{
     console.log('connected to mongoDB');
-    app.listen(PORT,() => console.log(`server running on port ${PORT}`));
+    app.listen(PORT, '0.0.0.0', () => console.log(`server running on port ${PORT}`));
 })
 .catch((err)=>{
     console.error('mongoDB connection error: ',err);
