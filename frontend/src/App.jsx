@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import api, { auth } from './api';
 import AuthForm from './AuthForm';
 import './App.css';
+import BackendNotice from './backendNotice';
 
 function App() {
   const [email, setEmail] = useState(auth.getEmail());
@@ -141,6 +142,7 @@ function App() {
 
   return (
     <div className="page">
+      <BackendNotice />
       <header className="masthead">
         <span className="mark">✂︎</span>
         <div>
