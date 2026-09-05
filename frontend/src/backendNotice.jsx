@@ -17,6 +17,10 @@ function BackendNotice() {
     server is hosted on a free-tier service and may need to wake up.
     </p>
 
+    <p>
+        ℹ️ Recruiter Note: The URL may look longer than typical shortened URLs due to the use of a free domain. The URL-shortening functionality is fully implemented and works as intended.
+    </p>
+
     <button onClick={() => setShow(false)}>
       Got it
     </button>
